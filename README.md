@@ -33,6 +33,7 @@ Para mais informações, entre em contato conosco através dos seguintes meios:
 - **Email:** contato@cafeinados.com
 - **Telefone:** (11) 1234-5678
 - **Endereço:** Rua dos Cafés, 123, São Paulo, SP
+  
 Agradecemos por visitar o **Cafeinados**. Esperamos que você desfrute de nossos produtos e serviços!
----
+
 **Cafeinados** - Transformando cada xícara em um momento especial.
