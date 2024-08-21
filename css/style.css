@@ -1,0 +1,42 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 50px;   
+    background-color: #f9f6f2;
+}
+
+
+#menu-h {
+    background-color: black;
+}
+
+#menu-h ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+    
+#menu-h ul li {
+    display: inline; 
+    font-size: 20px;
+}
+
+#menu-h ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    padding: 20px;
+}
+
+#menu-h ul li a:hover{
+    background-color: #0f8fcf;
+}
+
+section.fundo-site {
+    height: 100vh;
+    background-image: url(../img/fundo.png);
+}
