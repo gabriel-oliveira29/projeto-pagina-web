@@ -64,6 +64,7 @@ header .btn-contato button {
     color: #000;
     cursor: pointer;
     transition: .5s;
+    border-radius: 10px;
 }
 
 header .btn-contato button:hover{
@@ -93,6 +94,7 @@ section.hero-site .interface .txt-hero .btn-produtos a button{
     background-color: transparent;
     cursor: pointer;
     transition: .5s;
+    border-radius: 10px;
     
 }
 
@@ -199,5 +201,6 @@ section.contato {
     font-size: 15px;
     background-color: transparent;
     cursor: pointer;
+    border-radius: 10px;
     
 }
