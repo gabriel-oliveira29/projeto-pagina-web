@@ -168,7 +168,6 @@ section.contato {
     
 }
 
-
 .contato .icones-contato a{
    text-decoration: none;
 }
@@ -202,5 +201,4 @@ section.contato {
     background-color: transparent;
     cursor: pointer;
     border-radius: 10px;
-    
 }
