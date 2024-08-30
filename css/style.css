@@ -77,14 +77,23 @@ section.hero-site{
     background-image: url(../img/fundo.png);
 }
 
+.hero-site .txt-hero h1 {
+    font-size: 30px;
+} 
+
+.hero-site .txt-hero span {
+    font-size: 20px;
+}
+
 section.hero-site .interface .txt-hero .btn-produtos a button{
     margin: 20px;
     padding: 15px 50px;
     color: black;
-    font-size: 15px;
+    font-size: 30px;
     background-color: transparent;
     cursor: pointer;
     transition: .5s;
+    
 }
 
 section.hero-site .interface .txt-hero .btn-produtos a button:hover {
@@ -107,6 +116,14 @@ section.apresent{
     
 }
 
+.apresent .txt-itens h2 {
+    font-size: 25px;
+}
+
+.apresent .txt-itens span {
+    font-size: 17px;
+}
+
 section.apresent article.itens {
     max-width: 980px;
     margin: 0;
@@ -123,8 +140,64 @@ section.apresent article.itens div.img-itens img {
 }
 
 
-section.final {
-    height: 35vh;
+section.contato {
     background-color: #f9f6f2;
+    
 }
 
+.contato .interface {
+    max-width: 980px;
+}
+
+.contato .txt-contato h2 {
+    font-size: 50px;
+}
+.contato .txt-contato span {
+    font-size: 20px;
+}
+
+.txt-contato, .icones-contato {
+    padding: 10px;
+    display: inline-block;
+    width: 50%;
+    margin-right: -2px;
+    vertical-align: middle;
+    padding-left: 100px;
+    
+}
+
+
+.contato .icones-contato a{
+   text-decoration: none;
+}
+
+.contato .icones-contato button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    width: 60%;
+    height: 60%;
+    margin: 0 auto 50px auto;
+    padding: 0 60px;
+    justify-content: space-between;
+   
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    
+}
+.contato .icones-contato button:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.contato .icones-contato a button {
+    margin: 20px;
+    padding: 15px 50px;
+    color: black;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
