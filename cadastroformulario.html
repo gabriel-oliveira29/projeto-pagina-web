@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="css/styleformulario.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Produtos</h1>
+        <form action="	https://webhook.site/8cc35163-5dfa-4515-a7bd-3f1f3077163c" method="POST">
+            <div class="form-group">
+                <label for="productName">Produto:</label>
+                <input type="texto" id="Produto" name="Produto" required>
+            </div>
+
+            <div class="form-group">
+                <label for=">Categoria">Categoria:</label>
+                <select id=">Categoria" name="Categoria" required>
+                    <option value="café">café</option>
+                    <option value="cappuccinos">cappuccinos</option>
+                    <option value="capsulas">capsulas</option>
+                    <option value="filtros">filtros</option>
+                    <option value="cafeteiras">cafeteiras</option>
+                    <option value="maquina de café">maquina de café</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Preço">Preço:</label>
+                <input type="numero" id="Preço" name="Preço" min="0" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Descrição">Descrição:</label>
+                <input type="texto" id="Descrição" name="Descrição" required>
+            </div>
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+    </div>
+</body>
+
+</html>
