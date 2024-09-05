@@ -1,0 +1,10 @@
+@media screen and (max-width: 850px){
+    .menu-desktop, .btn-contato, .contato .icones-contato a button  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px){
+
+
+}
