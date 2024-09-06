@@ -76,6 +76,8 @@ header .menu-desktop nav ul li a {
 .hero-site{
     height: 90vh;
     background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .txt-hero h1 {
