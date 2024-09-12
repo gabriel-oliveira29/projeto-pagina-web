@@ -1,6 +1,10 @@
 @media screen and (max-width: 850px){
-    .menu-desktop, .btn-contato{
+    .menu-desktop, .btn-contato {
         display: none;
+    }
+
+    header .btn-menu-mobile {
+        display: block;
     }
 }
 
@@ -10,6 +14,17 @@ header{
     position:relative;
 }
 
+header .interface {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+}
+
+header.rolagem .btn-menu-mobile div{
+    background-color: #fff;
+    padding: 0px ;
+}
+
 .hero-site {
     margin: -10px;
 }
@@ -17,6 +32,7 @@ header{
 .txt-hero{
     margin: 60px;
 }
+
 section.hero-site .interface .txt-hero .btn-produtos a button{
     margin: 15px;
     padding: 10px 25px;
@@ -55,13 +71,23 @@ section.hero-site .interface .txt-hero .btn-produtos a button:hover {
     margin-bottom: 20px;
 }
 
+/*seção de contato*/
+
 .icones-contato {
     width: 110%;
     align-items: center;
 }
+
 .txt-contato {
-    width: 140%;
+  width: 100%;
+  padding-right: 100px; 
 }
+
+.txt-contato h3 {
+    font-size: 30px;
+    
+}
+
 
 .contato .icones-contato a button {
     color: #fff;

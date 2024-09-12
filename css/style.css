@@ -71,6 +71,41 @@ header .menu-desktop nav ul li a {
     transform: scale(1.05);
 }
 
+/*menu mobile*/
+
+header .btn-menu-mobile {
+    display: none;
+}
+
+header .btn-menu-mobile .linha-menumob1.ativo1 {
+    transform: rotate(45deg) translate(30%);
+}
+
+header .btn-menu-mobile .linha-menumob2.ativo2 {
+    transform: rotate(-45deg) translate(30%);
+}
+
+header .btn-menu-mobile .linha-menumob3.ativo3 {
+    transform: translateX(20%) 
+}
+
+.btn-menu-mobile div{
+    background-color: black;
+    height: 3px;
+    margin: 10px 0;
+}
+
+.linha-menumob1{
+    width: 30px;
+}
+
+.linha-menumob2{
+    width: 30px;
+}
+
+.linha-menumob3{
+    width: 30px;
+}
 /* sessão de apresentação */
 
 .hero-site{
@@ -86,7 +121,6 @@ header .menu-desktop nav ul li a {
 
 .txt-hero p {
     font-size: 20px;
-     
 }
 
 section.hero-site .interface .txt-hero .btn-produtos a button{
