@@ -75,18 +75,23 @@ header .menu-desktop nav ul li a {
 
 header .btn-menu-mobile {
     display: none;
+    position: relative;
+    z-index: 9999999;
 }
 
 header .btn-menu-mobile .linha-menumob1.ativo1 {
     transform: rotate(45deg) translate(30%);
+    background-color: #fff;
 }
 
 header .btn-menu-mobile .linha-menumob2.ativo2 {
     transform: rotate(-45deg) translate(30%);
+    background-color: #fff;
 }
 
 header .btn-menu-mobile .linha-menumob3.ativo3 {
-    transform: translateX(20%) 
+    transform: translateX(20%);
+    background-color: #fff;
 }
 
 .btn-menu-mobile div{
@@ -106,9 +111,51 @@ header .btn-menu-mobile .linha-menumob3.ativo3 {
 .linha-menumob3{
     width: 30px;
 }
-/* sessão de apresentação */
 
-.hero-site{
+.menu-mobile {
+    width: 0;
+    height: 0;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile ul {
+    list-style-type: none;
+}
+
+.menu-mobile nav a {
+    font-size: 30px;
+    text-decoration: none;
+    color:#fff;
+    padding: 20px 0;
+    display: block;
+}
+
+.menu-mobile nav a:hover {
+    transform: scale(1.10);
+    transition: 1s;
+}
+
+.menu-mobile.abrir {
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow {
+    overflow: hidden;
+}
+
+/* sessão de apresentação */
+.hero-site {
     height: 90vh;
     background-image: url(../img/fundo.png);
     background-repeat: no-repeat;
@@ -117,6 +164,7 @@ header .btn-menu-mobile .linha-menumob3.ativo3 {
 
 .txt-hero h1 {
     font-size: 30px;
+    
 } 
 
 .txt-hero p {
