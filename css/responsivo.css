@@ -20,8 +20,6 @@ header .interface {
     padding: 10px 30px;
 }
 
-
-
 header.rolagem .btn-menu-mobile div{
     background-color: #fff;
     padding: 0px ;
@@ -85,8 +83,8 @@ section.hero-site .interface .txt-hero .btn-produtos a button:hover {
 }
 
 .txt-contato {
-  width: 100%;
-  padding-right: 100px; 
+    width: 100%;
+    padding-right: 100px; 
 }
 
 .txt-contato h3 {
