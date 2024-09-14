@@ -1,0 +1,77 @@
+@media screen and (max-width: 850px){
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    header .btn-menu-mobile {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+
+    .mostruario-produtos {
+        height: 1700px;    
+        margin-top: 100px;
+    }
+
+    header .interface {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 30px;
+    }
+
+    .interface {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 730px){
+
+
+header .interface {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+}
+
+.mostruario-produtos {
+    margin: 400px auto;
+    margin-top: 100px;
+}
+
+header.rolagem .btn-menu-mobile div{
+    padding: 0px ;
+}
+
+/*seção de contato*/
+
+.interface {
+    flex-direction: column;
+}
+
+.icones-contato {
+    width: 110%;
+    align-items: center;
+}
+
+.txt-contato {
+    width: 100%;
+    padding-right: 100px; 
+}
+
+.txt-contato h3 {
+    font-size: 30px;
+}
+
+.contato .icones-contato a button {
+    color: #fff;
+    background-color: #000;
+}
+
+.contato .icones-contato button:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+}

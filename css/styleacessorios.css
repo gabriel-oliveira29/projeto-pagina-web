@@ -70,6 +70,93 @@ header.rolagem{
     transform: scale(1.05);
 }
 
+/*menu mobile*/
+
+header {
+    position: absolute;
+}
+
+header .btn-menu-mobile {
+    display: none;
+    position: relative;
+    z-index: 9999999;
+}
+
+header .btn-menu-mobile .linha-menumob1.ativo1 {
+    transform: rotate(45deg) translate(30%);
+    background-color: #fff;
+}
+
+header .btn-menu-mobile .linha-menumob2.ativo2 {
+    transform: rotate(-45deg) translate(30%);
+    background-color: #fff;
+}
+
+header .btn-menu-mobile .linha-menumob3.ativo3 {
+    transform: translateX(20%);
+    background-color: #fff;
+}
+
+.btn-menu-mobile div{
+    background-color: black;
+    height: 3px;
+    margin: 10px 0;
+}
+
+.linha-menumob1{
+    width: 30px;
+}
+
+.linha-menumob2{
+    width: 30px;
+}
+
+.linha-menumob3{
+    width: 30px;
+}
+
+.menu-mobile {
+    width: 0;
+    height: 0 ;
+    background-color:#000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile ul {
+    list-style-type: none;
+}
+
+.menu-mobile nav a {
+    font-size: 30px;
+    text-decoration: none;
+    color:#fff;
+    padding: 20px 0;
+    display: block;
+}
+
+.menu-mobile nav a:hover {
+    transform: scale(1.10);
+    transition: 1s;
+}
+
+.menu-mobile.abrir {
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow {
+    overflow: hidden;
+}
+
 /* sessão produtos*/
 
 .mostruario-produtos {
@@ -195,14 +282,14 @@ header.rolagem{
     
 }
 .contato .icones-contato button:hover {
-    background-color: black;
+    background-color: #000;
     transform: scale(1.05);
 }
 
 .contato .icones-contato a button {
     margin: 20px;
     padding: 15px 50px;
-    color: white;
+    color: #fff;
     font-size: 15px;
     background-color: black;
     cursor: pointer;

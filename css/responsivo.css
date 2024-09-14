@@ -10,8 +10,8 @@
 
 @media screen and (max-width: 580px){
 
-header{
-    position:relative;
+header {
+    position: absolute;
 }
 
 header .interface {
@@ -20,43 +20,37 @@ header .interface {
     padding: 10px 30px;
 }
 
-header.rolagem .btn-menu-mobile div{
-    background-color: #fff;
+header.rolagem .btn-menu-mobile div{  
     padding: 0px ;
-}
-
-section .hero-site {
-   background-color: #fff;
 }
 
 .hero-site {
     margin: -10px;
+    height: 600px;
 }
 
 .txt-hero{
     margin: 60px;
 }
 
-section.hero-site .interface .txt-hero .btn-produtos a button{
-    margin: 15px;
-    padding: 10px 25px;
-    color: #fff;
-    font-size: 30px;
-    background-color:#000;
-    transition: none;
-    border-radius: 12px;
-    box-shadow: 8px 8px 12px #aaaa;
+section.hero-site .interface .txt-hero .btn-produtos a button {
+    margin: 15px;  
 }
 
-section.hero-site .interface .txt-hero .btn-produtos a button:hover {
-    background-color: #000;
-    color: #fff;
-    transform: scale(1.05);
+section .interface {
+    margin: 100px auto;
 }
 
 .interface, .itens {
     flex-direction: column;
-    margin: 0 auto;
+}
+
+.txt-hero h1 {
+    font-size: 30px;
+}
+
+.txt-hero p {
+    font-size: 23px;
 }
 
 .txt-itens{
@@ -77,6 +71,10 @@ section.hero-site .interface .txt-hero .btn-produtos a button:hover {
 
 /*seção de contato*/
 
+section.contato  {
+    height: 550px;
+}
+
 .icones-contato {
     width: 110%;
     align-items: center;
@@ -87,9 +85,6 @@ section.hero-site .interface .txt-hero .btn-produtos a button:hover {
     padding-right: 100px; 
 }
 
-.txt-contato h3 {
-    font-size: 30px;
-}
 
 .contato .icones-contato a button {
     color: #fff;
