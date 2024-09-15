@@ -6,38 +6,38 @@
     header .btn-menu-mobile {
         display: block;
     }
-}
-
-
-@media screen and (max-width: 500px){
-
-    .mostruario-produtos {
-        height: 1700px;    
-        margin-top: 100px;
-    }
 
     header .interface {
         display: flex;
         flex-direction: row;
         padding: 10px 30px;
-    }
+    }   
+}
 
-    .interface {
-        flex-direction: column;
-    }
+@media screen and (max-width: 499px){
+ 
+.mostruario-produtos {
+    height: 1700px;    
+    margin-top: 100px;
+}
+
+
+.interface {
+    flex-direction: column;
+}
+                     
+.mostruario-produtos {
+    margin: 400px auto;
+}
 }
 
 @media screen and (max-width: 730px){
 
-
-header .interface {
-    display: flex;
-    flex-direction: row;
-    padding: 10px 30px;
+header {
+    position: absolute;
 }
 
 .mostruario-produtos {
-    margin: 400px auto;
     margin-top: 100px;
 }
 

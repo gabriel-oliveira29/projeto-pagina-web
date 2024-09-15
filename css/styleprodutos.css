@@ -72,9 +72,6 @@ header.rolagem{
 
 /*menu mobile*/
 
-header {
-    position: absolute;
-}
 
 header .btn-menu-mobile {
     display: none;
@@ -160,7 +157,6 @@ body.no-overflow {
 /* sessão produtos*/
 
 .mostruario-produtos {
-    height: 120vh;
     max-width: 920px;
     margin: 100px auto; 
 }
