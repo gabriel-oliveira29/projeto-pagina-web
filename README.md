@@ -19,14 +19,6 @@ Bem-vindo ao **Cafeinados**! Nosso site é a porta de entrada para um mundo de s
 - **Moedores de Café:** Moedores manuais e elétricos para ajustar a moagem do seu café.
 - **Canecas Personalizadas:** Canecas elegantes e funcionais para desfrutar seu café com estilo.
 - **Filtros e Cafeteiras:** Variedade de filtros e cafeteiras para todos os métodos de preparo.
-  
-## Serviços
-### Café no Local
-Desfrute de nosso café no ambiente aconchegante de nossa loja. Oferecemos uma variedade de bebidas quentes e frias, acompanhadas de deliciosos acompanhamentos.
-### Encomendas Online
-Faça seu pedido diretamente pelo nosso site e receba em casa uma seleção dos melhores grãos e produtos relacionados ao café. Oferecemos entregas rápidas e seguras.
-### Eventos e Workshops
-Participe de nossos eventos e workshops sobre a arte do café, onde você aprenderá sobre a história do café, técnicas de preparo e degustação.
 
 ## Contato
 Para mais informações, entre em contato conosco através dos seguintes meios:
