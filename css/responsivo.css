@@ -33,11 +33,11 @@ header.rolagem .btn-menu-mobile div{
     margin: 60px;
 }
 
-section.hero-site .interface .txt-hero .btn-produtos a button {
+div.hero-site .interface .txt-hero .btn-produtos a button {
     margin: 15px;  
 }
 
-section .interface {
+div .interface {
     margin: 100px auto;
 }
 
