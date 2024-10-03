@@ -29,3 +29,4 @@ Para mais informações, entre em contato conosco através dos seguintes meios:
 Agradecemos por visitar o **Cafeinados**. Esperamos que você desfrute de nossos produtos e serviços!
 
 **Cafeinados** - Transformando cada xícara em um momento especial.
+Equipe: Gabriel Henrique de Oliveira Alves e Isadora Geremias de Melo
