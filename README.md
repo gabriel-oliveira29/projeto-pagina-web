@@ -5,9 +5,9 @@ Bem-vindo ao **Cafeinados**! Nosso site é a porta de entrada para um mundo de s
 
 ## Produtos
 ### Grãos de Café
-- **Blend Clássico:** Um mix equilibrado de grãos arábica e robusta, ideal para começar o dia com energia.
+- **Clássico:** Um mix equilibrado de grãos arábica e robusto, ideal para começar o dia com energia.
 - **Arábica Premium:** Grãos 100% Arábica, conhecidos por seu sabor suave e notas frutadas.
-- **Robusta Forte:** Para quem prefere um café mais encorpado e intenso.
+- **Robusto:** Para quem prefere um café mais encorpado e intenso.
 ### Café Moído
 - **Moagem Fina:** Perfeito para espresso e máquinas de café.
 - **Moagem Média:** Ideal para cafeteiras de filtro e prensa francesa.
