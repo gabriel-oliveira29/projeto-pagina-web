@@ -27,7 +27,7 @@ header.rolagem{
 }
 
 .interface {
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     align-items: center;
     max-width: 980px;
@@ -68,4 +68,69 @@ header.rolagem{
     background-color: #fff;
     color: #000;
     transform: scale(1.05);
+}
+
+/*formulario*/
+
+.formulario {
+    margin-top: 100px;
+    height: 450px ;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+/*sessão de conatos*/
+
+.contato {
+    background-color: #f9f6f2;  
+}
+
+.contato .interface {
+    max-width: 980px;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.txt-contato h2 {
+    font-size: 50px;
+}
+.txt-contato p {
+    font-size: 20px;
+}
+
+.icones-contato {
+    display: flex;
+    font-size: 22px;  
+    flex-direction: column;
+    gap: 30px;
 }

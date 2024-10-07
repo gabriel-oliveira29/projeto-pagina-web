@@ -52,46 +52,51 @@ header.rolagem{
     transform: scale(1.05);
 }
 
-.btn-contato button {
-    width: 140px;
-    height: 50px;
-    font-size: 20px;
-    background-color: #f9f6f2;  
-    border: 1px solid #000;
-    color: #000;
+.btn-carrinho {
+    display:flex;
+    font-size: 35px;
     cursor: pointer;
-    transition: .5s;
-    border-radius: 10px;
+    position: relative;
+
 }
 
-.btn-contato button:hover{
+.btn-carrinho i:hover{
+    transform: scale(1.10); 
+    transition: .5s;
+}
+
+.txt-carrinho{
+    width: 0;
+    height: 0;
     background-color: #fff;
-    color: #000;
-    transform: scale(1.05);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.txt-carrinho.abrir{
+    width: 50%;
+    height: 100vh;
+    transition: .7s;
+}
+
+.botao-sair-carrinho{
+    width: 0;
+    display: flex;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.botao-sair-carrinho i:hover{
+    transform: scale(1.10); 
+    transition: .5s;
 }
 
 /*menu mobile*/
 
-
 header .btn-menu-mobile {
     display: none;
-    position: relative;
-    z-index: 9999999;
-}
-
-header .btn-menu-mobile .linha-menumob1.ativo1 {
-    transform: rotate(45deg) translate(30%);
-    background-color: #fff;
-}
-
-header .btn-menu-mobile .linha-menumob2.ativo2 {
-    transform: rotate(-45deg) translate(30%);
-    background-color: #fff;
-}
-
-header .btn-menu-mobile .linha-menumob3.ativo3 {
-    transform: translateX(20%);
-    background-color: #fff;
 }
 
 .btn-menu-mobile div{
@@ -147,7 +152,22 @@ header .btn-menu-mobile .linha-menumob3.ativo3 {
 
 .menu-mobile.abrir {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
+}
+
+.sair-menumobile{
+    display: flex;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    font-size: 40px;
+}
+
+.sair-menumobile i:hover {
+    transform: scale(1.05);
+    transition: .5s;
 }
 
 body.no-overflow {
