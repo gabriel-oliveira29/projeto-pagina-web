@@ -71,13 +71,14 @@ div .interface {
 
 /*seção de contato*/
 
-section.contato  {
+.contato  {
     height: 550px;
 }
 
 .icones-contato {
-    width: 110%;
+    width: 130%;
     align-items: center;
+    padding-right: 100px ;
 }
 
 .txt-contato {
@@ -86,13 +87,6 @@ section.contato  {
 }
 
 
-.contato .icones-contato a button {
-    color: #fff;
-    background-color: #000;
-}
 
-.contato .icones-contato button:hover {
-    background-color: #000;
-    transform: scale(1.05);
-}
+
 }

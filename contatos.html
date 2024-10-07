@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeinados</title>
     <link rel="stylesheet" href="css/stylecontatos.css">
+    <link rel="stylesheet" href="css/responsivocontatos.css" media="screen">
 
     <!-- fonte do site -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,32 +17,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--javascript-->
-    <script src="javascript/menu.js"></script>
-
+    <script src="javascript/menu.js" defer></script>
+    <script src="javascript/btn-menu-mobile.js" defer></script>
 </head>
 
 <body>
 
-    <header id="header">
+     <header id="header">
 
         <div class="interface">
 
-            <section class="logo">
+            <div class="logo">
                 <img src="img/cafeinados.png" alt="logotipo do site">
-            </section>
+            </div>
 
-            <section class="menu-desktop">
+            <div class="menu-desktop">
 
                 <nav>
                     <ul>
                         <li><a href="index.html#">Home</a></li>
                         <li><a href="produtos.html#">Produtos</a></li>
-                        <li><a href="acessorios.html#">Acessórios</a>
-                        </li>
+                        <li><a href="acessorios.html#">Acessórios</a></li>
                     </ul>
                 </nav>
 
-            </section>
+            </div>
+
+            <div class="btn-menu-mobile" id="btn-menu-mobile">
+                <div class="linha-menumob1"></div>
+                <div class="linha-menumob2"></div>
+                <div class="linha-menumob3"></div>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+
+                <div class="sair-menumobile" id="sair-menumobile">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html#">Home</a></li>
+                        <li><a href="produtos.html#">Produtos</a></li>
+                        <li><a href="acessorios.html#">Acessórios</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
 
         </div>
         <hr>

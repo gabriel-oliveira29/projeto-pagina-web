@@ -1,0 +1,31 @@
+@media screen and (max-width: 850px){
+    .menu-desktop {
+        display: none;
+    }
+
+    header .btn-menu-mobile {
+        display: block;
+    }
+
+.formulario {
+    margin: 10px;
+    margin-top: 130px;
+}
+
+.interface {
+    justify-content: space-between;
+    padding:20px;
+}
+
+.contato{
+    height: 400px;
+    
+}
+.contato .interface {
+    flex-direction: column;
+}
+
+.icones-contato{
+    margin-top: 30px;
+}
+}

@@ -18,4 +18,5 @@ btnmenumobile.addEventListener("click", ()=>{
 sairmenumobile.addEventListener("click", ()=>{
     sairmenumobile.classList.remove('ativo')
     menumobile.classList.remove('abrir')
+    body.classList.toggle('no-overflow')
 })

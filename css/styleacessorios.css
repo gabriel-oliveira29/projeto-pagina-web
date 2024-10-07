@@ -249,6 +249,10 @@ body.no-overflow {
     transform: scale(1.05);
 }
 
+body.no-overflow {
+    overflow: hidden;
+}
+
 /*sessão de conatos*/
 
 .contato {
@@ -277,19 +281,18 @@ body.no-overflow {
 
 .icones-contato a {
     text-decoration: none;
-     display: flex;
-     padding: 10px 20px;
-     background-color: #000; 
-     color: white; 
-     text-align: center;
-     text-decoration: none; 
-     border-radius: 10px; 
-     transition: .5s;
-     flex-direction: column;
-     margin: 20px;
+    display: flex;
+    padding: 10px 20px;
+    background-color: #000; 
+    color: white; 
+    text-align: center;
+    text-decoration: none; 
+    border-radius: 10px; 
+    transition: .5s;
+    flex-direction: column;
+    margin: 20px;
  }
  
  .icones-contato a:hover{
-     transform: scale(1.05);
-   
+    transform: scale(1.05);
  }

@@ -59,13 +59,12 @@ header.rolagem .btn-menu-mobile div{
 
 /*seção de contato*/
 
-.interface {
-    flex-direction: column;
-}
+
 
 .icones-contato {
     width: 110%;
     align-items: center;
+    padding-right: 100px ;
 }
 
 .txt-contato {
@@ -75,15 +74,5 @@ header.rolagem .btn-menu-mobile div{
 
 .txt-contato h3 {
     font-size: 30px;
-}
-
-.contato .icones-contato a button {
-    color: #fff;
-    background-color: #000;
-}
-
-.contato .icones-contato button:hover {
-    background-color: #000;
-    transform: scale(1.05);
 }
 }
