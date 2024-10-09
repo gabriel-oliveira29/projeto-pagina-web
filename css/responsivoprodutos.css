@@ -29,6 +29,16 @@
 .mostruario-produtos {
     margin: 400px auto;
 }
+
+.txt-carrinho.abrir{
+    width: 90%;
+    height: 600px;
+
+}
+
+.txt-carrinho {
+    max-height: 400vh; /* Altura máxima do carrinho */
+}
 }
 
 @media screen and (max-width: 730px){

@@ -39,6 +39,16 @@ header .interface {
 .mostruario-produtos {
     margin: 400px auto;
 }
+
+.txt-carrinho.abrir{
+    width: 90%;
+    height: 600px;
+
+}
+
+.txt-carrinho {
+    max-height: 400vh; /* Altura máxima do carrinho */
+}
 }
 
 @media screen and (max-width: 730px){
@@ -57,9 +67,8 @@ header.rolagem .btn-menu-mobile div{
     padding: 0px ;
 }
 
+
 /*seção de contato*/
-
-
 
 .icones-contato {
     width: 110%;

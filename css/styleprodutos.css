@@ -93,6 +93,103 @@ header.rolagem{
     transition: .5s;
 }
 
+/* Estilos Gerais do Carrinho */
+.txt-carrinho {
+    position: absolute;
+    top: 60px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largura do carrinho */
+    max-height: 400px; /* Altura máxima do carrinho */
+    overflow-y: auto; /* Permite rolagem se necessário */
+    display: none; /* Começa fechado */
+    z-index: 1000; /* Para que fique acima de outros elementos */
+}
+
+/* Classe para abrir o carrinho */
+.txt-carrinho.abrir {
+    display: block; /* Exibe o carrinho */
+}
+
+/* Estilo do item no carrinho */
+.carrinho-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee; /* Linha separadora */
+}
+
+.carrinho-item img {
+    margin-right: 10px;
+}
+
+.carrinho-item span {
+    flex-grow: 1; /* Para ocupar o espaço restante */
+}
+
+.carrinho-item button {
+    margin-left: 5px;
+    background-color: #f44336; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.carrinho-item button:hover {
+    background-color: #d32f2f; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo do total */
+#total-display {
+    font-weight: bold;
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Linha separadora do total */
+    text-align: right; /* Alinhamento do texto */
+}
+
+#btn-comprar {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    border: none; /* Remove bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Faz o botão se comportar como um bloco */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 10px 0; /* Margem em cima e embaixo */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    border-radius: 5px; /* Arredonda os cantos */
+    transition: background-color 0.3s; /* Animação de transição */
+}
+
+#btn-comprar:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+.btn-carrinho {
+    position: relative; /* Para posicionar o marcador em relação ao ícone */
+}
+
+#carrinho-quantidade {
+    position: absolute; /* Permite posicionamento absoluto */
+    top: -10px; /* Ajuste a posição vertical */
+    right: -10px; /* Ajuste a posição horizontal */
+    background-color: red; /* Cor de fundo do marcador */
+    color: white; /* Cor do texto */
+    border-radius: 50%; /* Faz o marcador ser redondo */
+    padding: 5px; /* Espaço interno */
+    font-size: 12px; /* Tamanho da fonte */
+    min-width: 20px; /* Largura mínima para garantir a forma */
+    text-align: center; /* Centraliza o texto */
+}
+
+
+
 /*menu mobile*/
 
 header .btn-menu-mobile {
@@ -294,101 +391,3 @@ body.no-overflow {
  .icones-contato a:hover{
      transform: scale(1.05);
  }
-
-/* carrinho de compras*/
-
-/* Estilos Gerais do Carrinho */
-.txt-carrinho {
-    position: absolute;
-    top: 60px; /* Ajuste conforme necessário */
-    right: 20px; /* Ajuste conforme necessário */
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Largura do carrinho */
-    max-height: 400px; /* Altura máxima do carrinho */
-    overflow-y: auto; /* Permite rolagem se necessário */
-    display: none; /* Começa fechado */
-    z-index: 1000; /* Para que fique acima de outros elementos */
-}
-
-/* Classe para abrir o carrinho */
-.txt-carrinho.abrir {
-    display: block; /* Exibe o carrinho */
-}
-
-/* Estilo do item no carrinho */
-.carrinho-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #eee; /* Linha separadora */
-}
-
-.carrinho-item img {
-    margin-right: 10px;
-}
-
-.carrinho-item span {
-    flex-grow: 1; /* Para ocupar o espaço restante */
-}
-
-.carrinho-item button {
-    margin-left: 5px;
-    background-color: #f44336; /* Cor do botão */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px 10px;
-}
-
-.carrinho-item button:hover {
-    background-color: #d32f2f; /* Cor do botão ao passar o mouse */
-}
-
-/* Estilo do total */
-#total-display {
-    font-weight: bold;
-    padding: 10px;
-    border-top: 1px solid #ccc; /* Linha separadora do total */
-    text-align: right; /* Alinhamento do texto */
-}
-
-#btn-comprar {
-    background-color: #4CAF50; /* Cor de fundo verde */
-    color: white; /* Cor do texto */
-    border: none; /* Remove bordas */
-    padding: 10px 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-    text-decoration: none; /* Remove sublinhado */
-    display: inline-block; /* Faz o botão se comportar como um bloco */
-    font-size: 16px; /* Tamanho da fonte */
-    margin: 10px 0; /* Margem em cima e embaixo */
-    cursor: pointer; /* Muda o cursor ao passar o mouse */
-    border-radius: 5px; /* Arredonda os cantos */
-    transition: background-color 0.3s; /* Animação de transição */
-}
-
-#btn-comprar:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
-}
-
-.btn-carrinho {
-    position: relative; /* Para posicionar o marcador em relação ao ícone */
-}
-
-#carrinho-quantidade {
-    position: absolute; /* Permite posicionamento absoluto */
-    top: -10px; /* Ajuste a posição vertical */
-    right: -10px; /* Ajuste a posição horizontal */
-    background-color: red; /* Cor de fundo do marcador */
-    color: white; /* Cor do texto */
-    border-radius: 50%; /* Faz o marcador ser redondo */
-    padding: 5px; /* Espaço interno */
-    font-size: 12px; /* Tamanho da fonte */
-    min-width: 20px; /* Largura mínima para garantir a forma */
-    text-align: center; /* Centraliza o texto */
-}
-
