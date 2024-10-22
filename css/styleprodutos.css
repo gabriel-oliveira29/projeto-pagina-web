@@ -301,7 +301,7 @@ body.no-overflow {
     background-color: #fff;
     border-radius: 12px;
     width: 195px;
-    height: 255px;
+    height: 350px;
     box-shadow: 4px 4px 12px #aaaa;
     margin: 20px;
     
@@ -309,9 +309,10 @@ body.no-overflow {
 
 .produtos img {
     width: 100%;
-    height: 130px;
+    height: 250px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    object-fit: cover;
 }
 
 .produtos div {
@@ -320,7 +321,7 @@ body.no-overflow {
     justify-content: center;
     align-items: center;
     gap: 4px;
-    height: 50%;
+    height: 25%;
 }
 
 .produtos h1 {
