@@ -20,6 +20,7 @@
     <script src="javascript/menu.js"></script>
     <script src="javascript/btn-menu-mobile.js" defer></script>
     <script src="javascript/carrinho.js" defer></script>
+    <script src="javascript/CadastroProdutos.js" defer ></script>
 
 </head>
 
@@ -47,7 +48,7 @@
 
             <div class="btn-carrinho" id="btn-carrinho">
                 <i class="bi bi-cart3"></i>
-                <span id="carrinho-quantidade" class="quantidade">0</span> <!-- Marcador de quantidade -->
+                <span id="carrinho-quantidade" class="quantidade">0</span>
             </div>
 
             <div class="txt-carrinho" id="txt-carrinho">
@@ -56,7 +57,7 @@
                 </div>
                 <hr>
                 <ul class="listacarrinho" id="listacarrinho"></ul>
-                <button id="btn-comprar">Comprar</button> 
+                <button id="btn-comprar">Comprar</button>
             </div>
 
             <div class="btn-menu-mobile" id="btn-menu-mobile">
@@ -92,70 +93,7 @@
             <h1>Utensílios</h1>
         </div>
 
-        <div class="mostruario">
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="Cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="Cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-        </div>
+        <div class="mostruario" id="utensilios"></div>
 
     </section>
 
@@ -165,68 +103,7 @@
             <h1>Louças</h1>
         </div>
 
-        <div class="mostruario">
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-
-            <div class="produtos">
-
-                <img src="img/cafeteira.png" alt="">
-                <div>
-                    <h1>titulo</h1>
-                    <span>R$ 5.50</span>
-                    <button class="btn-produto" data-nome="cafeteira" data-preco="5.50" data-img="img/cafeteira.png">click aqui</button>
-                </div>
-            </div>
-        </div>
+        <div class="mostruario" id="loucas"></div>
 
     </section>
 
@@ -240,7 +117,7 @@
                 <span>Entre em contato com nossa equipe.</span>
 
             </article>
-            
+
             <div class="icones-contato">
 
                 <a href="contatos.html"><i class="bi bi-whatsapp"> Whatsapp</i></a>

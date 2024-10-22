@@ -333,7 +333,7 @@ body.no-overflow {
 }
 
 .produtos button {
-    background-color: #2192ff;
+    background-color: #000;
     height: 30px;
     border: none;
     padding: 4px;
@@ -342,6 +342,7 @@ body.no-overflow {
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .produtos button:hover {
