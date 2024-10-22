@@ -57,7 +57,7 @@ function excluirProduto(nomeProduto) {
         const transaction = db.transaction("produtos", "readwrite");
         const store = transaction.objectStore("produtos");
 
-        const deleteRequest = store.delete(nomeProduto);
+        const deleteRequest = store.delete(nomeProduto.trim());
 
         deleteRequest.onsuccess = function() {
             alert(`Produto "${nomeProduto}" excluído com sucesso!`);
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', carregarProdutos);
 document.getElementById('form-cadastro').addEventListener('submit', function(event) {
     event.preventDefault(); // Impede o envio do formulário e mudança de página
 
-    const nome = document.getElementById('produto').value;
+    const nome = document.getElementById('produto').value.trim();
     const categoria = document.getElementById('categoria').value;
     const preco = parseFloat(document.getElementById('preco').value);
     const imagem = document.getElementById('imagem').files[0];
