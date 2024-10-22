@@ -66,29 +66,6 @@ function excluirProduto(nomeProduto) {
     };
 }
 
-// Função para limpar todos os produtos do IndexedDB
-function limparBancoDeDados() {
-    const request = abrirBancoDeDados();
-    request.onsuccess = function(event) {
-        const db = event.target.result;
-        const transaction = db.transaction("produtos", "readwrite");
-        const store = transaction.objectStore("produtos");
-
-        // Solicita a limpeza de todos os registros da store
-        const clearRequest = store.clear();
-
-        clearRequest.onsuccess = function() {
-            alert('Todos os produtos foram removidos com sucesso!');
-            atualizarProdutosHTML(); // Atualiza o HTML após a limpeza
-        };
-
-        clearRequest.onerror = function(event) {
-            alert('Erro ao limpar o banco de dados.');
-            console.error(event);
-        };
-    };
-}
-
 // Função para atualizar a exibição dos produtos na página
 function atualizarProdutosHTML() {
     const container = document.querySelectorAll('.mostruario'); // Seleciona todas as seções de produtos
@@ -177,12 +154,5 @@ document.getElementById('excluir').addEventListener('click', function() {
         document.getElementById('produto-excluir').value = ''; // Limpa o campo de entrada
     } else {
         alert('Por favor, insira o nome do produto que deseja excluir.');
-    }
-});
-
-// Evento para limpar todos os produtos ao clicar no botão
-document.getElementById('limpar').addEventListener('click', function() {
-    if (confirm('Tem certeza de que deseja excluir todos os produtos?')) {
-        limparBancoDeDados();
     }
 });
