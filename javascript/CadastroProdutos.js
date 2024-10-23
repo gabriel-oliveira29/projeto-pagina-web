@@ -75,7 +75,20 @@ function atualizarProdutosHTML() {
 }
 
 // Chama a função ao carregar a página
-document.addEventListener('DOMContentLoaded', carregarProdutos);
+document.addEventListener('DOMContentLoaded', () => {
+    // Solicita armazenamento persistente ao navegador
+    if (navigator.storage && navigator.storage.persist) {
+        navigator.storage.persist().then((granted) => {
+            if (granted) {
+                console.log("Persistência garantida!");
+            } else {
+                console.log("Persistência não garantida.");
+            }
+        });
+    }
+
+    carregarProdutos(); // Carrega os produtos ao carregar a página
+});
 
 // Evento para cadastrar produto
 document.getElementById('form-cadastro').addEventListener('submit', function(event) {
