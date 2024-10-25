@@ -1,10 +1,10 @@
 <?php
-// Dados do banco de dados fornecidos
-$databaseUrl = getenv('Postgres.DATABASE_URL');
+// Usando a DATABASE_URL para conectar ao banco de dados
+$db_url = getenv('DATABASE_URL');
 
 try {
-    // Conectar ao banco de dados PostgreSQL usando a URL
-    $conn = new PDO($databaseUrl);
+    // Conectar ao banco de dados PostgreSQL
+    $conn = new PDO($db_url);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
