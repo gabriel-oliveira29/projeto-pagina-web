@@ -1,10 +1,10 @@
 <?php
 // Dados do banco de dados fornecidos
-$host = "postgres-evhd.railway.internal";
-$dbname = "railway";
-$port = "5432";
-$user = "postgres";
-$password = "UfSsxIKpQYVUCKGYlqdbNZlxDXsUigWJ";
+$PGHOST = "postgres-evhd.railway.internal";
+$PGDATABASE = "railway";
+$PGPORT = "5432";
+$PGUSER = "postgres";
+$PGPASSWORD = "UfSsxIKpQYVUCKGYlqdbNZlxDXsUigWJ";
 
 try {
     // Conectar ao banco de dados PostgreSQL
