@@ -111,7 +111,7 @@ document.getElementById('form-cadastro').addEventListener('submit', function(eve
             nome: nome,
             categoria: categoria,
             preco: preco,
-            imagem: e.target.result // Usa a URL da imagem
+            imagem: e.target.result
         };
 
         const request = abrirBancoDeDados();
