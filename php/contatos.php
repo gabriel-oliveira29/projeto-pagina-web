@@ -1,10 +1,14 @@
 <?php
-// Usando a DATABASE_URL para conectar ao banco de dados
-$db_url = getenv('DATABASE_URL');
+// Dados do banco de dados fornecidos
+$host = "junction.proxy.rlwy.net";
+$dbname = "railway";
+$port = "42339";
+$user = "postgres";
+$password = "iqrTOPeHEoCNcATUlHWGHoivbxwekalw"; // Substitua pela sua senha real
 
 try {
     // Conectar ao banco de dados PostgreSQL
-    $conn = new PDO($db_url);
+    $conn = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
