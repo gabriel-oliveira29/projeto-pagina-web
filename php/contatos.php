@@ -1,14 +1,10 @@
 <?php
 // Dados do banco de dados fornecidos
-$PGHOST = "postgres-evhd.railway.internal";
-$PGDATABASE = "railway";
-$PGPORT = "5432";
-$PGUSER = "postgres";
-$PGPASSWORD = "UfSsxIKpQYVUCKGYlqdbNZlxDXsUigWJ";
+$databaseUrl = getenv('Postgres.DATABASE_URL');
 
 try {
-    // Conectar ao banco de dados PostgreSQL
-    $conn = new PDO("pgsql:host=$host;dbname=$dbname;port=$port", $user, $password);
+    // Conectar ao banco de dados PostgreSQL usando a URL
+    $conn = new PDO($databaseUrl);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
