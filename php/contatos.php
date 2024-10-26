@@ -1,13 +1,13 @@
 <?php
-// Dados do banco de dados fornecidos
-$host = "junction.proxy.rlwy.net";
-$dbname = "railway";
-$port = "42339";
-$user = "postgres";
-$password = "iqrTOPeHEoCNcATUlHWGHoivbxwekalw"; // Substitua pela sua senha real
+// Configurações do banco de dados fornecidas pelo Railway
+$host = getenv('PGHOST') ?: 'default_host';
+$port = getenv('PGPORT') ?: '5432';
+$dbname = getenv('PGDATABASE') ?: 'railway';
+$user = getenv('PGUSER') ?: 'postgres';
+$password = getenv('PGPASSWORD') ?: 'default_password';
 
 try {
-    // Conectar ao banco de dados PostgreSQL
+    // Conectar ao banco de dados PostgreSQL usando os valores das variáveis de ambiente
     $conn = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
