@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeinados</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsivo.css" media="screen">
+    <link rel="stylesheet" href="css/styleindex.css">
+    <link rel="stylesheet" href="css/stylehome.css">
+    <link rel="stylesheet" href="css/styleprodutos.css">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+    <link rel="stylesheet" href="css/stylecontatos.css">
+
+    <link rel="stylesheet" href="css/responsivohome.css" media="screen">
+    <link rel="stylesheet" href="css/responsivoprodutos.css" media="screen">
+    <link rel="stylesheet" href="css/responsivocontatos.css" media="screen">
 
     <!-- fonte do site -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +26,15 @@
     <!--javascript-->
     <script src="javascript/menu.js" defer></script>
     <script src="javascript/btn-menu-mobile.js" defer></script>
+    <script src="javascript/carrinho.js" defer></script>
+    <script src="javascript/NavegarNasPaginas.js" defer></script>
+    <script src="javascript/AdicionandoProduto.js" defer></script>
+    <script src="javascript/excluirProduto.js" defer></script>
+    <script src="javascript/alerta.js" defer></script>
 </head>
 
 <body>
+
     <header id="header">
 
         <div class="interface">
@@ -34,18 +47,26 @@
 
                 <nav>
                     <ul>
-                        <li><a href="index.html#">Home</a></li>
-                        <li><a href="produtos.html#">Produtos</a></li>
-                        <li><a href="acessorios.html#">Acessórios</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="acessorios.html">Acessórios</a></li>
                     </ul>
                 </nav>
 
             </div>
 
-            <div class="btn-contato">
+            <div class="btn-carrinho" id="btn-carrinho">
+                <i class="bi bi-cart3"></i>
+                <span id="carrinho-quantidade" class="quantidade">0</span>
+            </div>
 
-                <a href="cadastro.html" class="botao">cadastro</a>
-
+            <div class="txt-carrinho" id="txt-carrinho">
+                <div class="botao-sair-carrinho" id="botao-sair-carrinho">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <hr>
+                <ul class="listacarrinho" id="listacarrinho"></ul>
+                <button id="btn-comprar">Comprar</button>
             </div>
 
             <div class="btn-menu-mobile" id="btn-menu-mobile">
@@ -56,13 +77,17 @@
 
             <div class="menu-mobile" id="menu-mobile">
 
+                <div class="sair-menumobile" id="sair-menumobile">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
                 <nav>
                     <ul>
-                        <li><a href="index.html#">Home</a></li>
-                        <li><a href="produtos.html#">Produtos</a></li>
-                        <li><a href="acessorios.html#">Acessórios</a></li>
-                        <li><a href="contatos.html">Contato</a></li>
-                        <li><a href="cadastro.html">cadastro</a></li>
+                        <li><a href="home.html" id="sair1">Home</a></li>
+                        <li><a href="produtos.html" id="sair2">Produtos</a></li>
+                        <li><a href="acessorios.html" id="sair3">Acessórios</a></li>
+                        <li><a href="contatos.html" id="sair4">Contato</a></li>
+                        <li><a href="cadastro.html" id="sair5">cadastro</a></li>
                     </ul>
                 </nav>
 
@@ -72,108 +97,7 @@
         <hr>
     </header>
 
-    <div class="hero-site">
-
-        <div class="interface">
-
-            <div class="txt-hero">
-
-                <h1>Descubra o verdadeiro <br>
-                    sabor do café em cada xícara!</h1><br>
-                <p>Nossa missão é trazer o café mais frescos , <br>
-                    diretamente das melhores plantações do mundo <br>
-                    Seja você um apreciador de café puro.</p>
-
-                <div class="btn-produtos">
-
-                    <a href="produtos.html#">
-                        <h2>conhecer produtos</h2>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="apresent">
-
-        <article class="itens">
-
-            <div class="img-itens item-1">
-
-                <img src="img/cafe.png" alt="cafe">
-
-            </div>
-
-            <div class="txt-itens item-2">
-
-                <h2>Experimente <br>
-                    a intensidade de nossos cafés</h2><br>
-                <p>que são perfeitos para começar o dia.</p>
-
-            </div>
-
-        </article>
-
-        <article class="itens">
-
-            <div class="txt-itens">
-
-                <h2>Desde designs clássicos <br>
-                    até opções modernas,</h2><br>
-                <p>temos a caneca ideal para tornar <br>
-                    cada momento ainda mais especial.</p>
-
-            </div>
-
-            <div class="img-itens">
-
-                <img src="img/canecas.png" alt="canecas">
-
-            </div>
-
-        </article>
-
-        <article class="itens">
-
-            <div class="img-itens item-3">
-
-                <img src="img/moedor.png" alt="moedor">
-
-            </div>
-
-            <div class="txt-itens item-4">
-
-                <h2> Nossos moedores de café</h2><br>
-                <p>são projetados para extrair o máximo sabor <br>
-                    e qualidade dos nossos grãos.</p>
-
-            </div>
-
-        </article>
-
-        <article class="itens">
-
-            <div class="txt-itens">
-
-                <h2>Explore nossas máquinas de café</h2><br>
-                <p>projetadas para extrair o melhor dos nossos grãos,<br>
-                    com simplicidade e ideais para nossos cafés.</p>
-
-            </div>
-
-            <div class="img-itens">
-
-                <img src="img/cafeteira.png" alt="cafeteira">
-
-            </div>
-
-        </article>
-
-    </div>
+    <div id="conteudo"></div>
 
     <div class="contato">
 
@@ -181,19 +105,15 @@
 
             <article class="txt-contato">
 
-                <h3>para mais ajuda </h3><br>
+                <h2>para mais ajuda </h2><br>
                 <p>Entre em contato com nossa equipe.</p>
 
             </article>
 
             <div class="icones-contato">
 
-                <a href="contatos.html"><i class="bi bi-whatsapp"> Whatsapp</i></a>
-
-                <a href="contatos.html"><i class="bi bi-envelope"> E-mail</i></a>
-
-                <a href="contatos.html"><i class="bi bi-telephone"> Telefone</i></a>
-
+                <a href="contatos.html"><i class="bi bi-telephone"> Contatos</i></a>
+                <a href="cadastro.html"> Cadastro de produtos</a>
             </div>
 
         </div>

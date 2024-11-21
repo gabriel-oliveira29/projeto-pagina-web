@@ -1,0 +1,98 @@
+@media screen and (max-width: 850px){
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    header .btn-menu-mobile {
+        display: block;
+    }
+
+    header .interface {
+       height: 65px;
+    }
+    .contato  {
+    
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 580px){
+
+header {
+    position: absolute;
+}
+
+header .interface {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+}
+
+header.rolagem .btn-menu-mobile div{  
+    padding: 0px ;
+}
+
+.hero-site {
+    margin: -10px;
+    height: 600px;
+}
+
+.txt-hero{
+    margin: 60px;
+}
+
+div.hero-site .interface .txt-hero .btn-produtos a button {
+    margin: 15px;  
+}
+
+div .interface {
+    margin: 100px auto;
+}
+
+.interface, .itens {
+    flex-direction: column;
+}
+
+.txt-hero h1 {
+    font-size: 30px;
+}
+
+.txt-hero p {
+    font-size: 23px;
+}
+
+.txt-itens{
+    text-align: center;
+}
+
+.item-1, .item-3{
+    order: 1;
+}
+
+.item-2, .item-4{
+    order: 0;
+}
+
+.txt-itens{
+    margin-bottom: 20px;
+}
+
+/*seção de contato*/
+
+.contato  {
+    
+    min-height: 650px;
+}
+
+.icones-contato {
+    width: 130%;
+    align-items: center;
+    padding-right: 100px ;
+    
+}
+
+.txt-contato {
+    width: 100%;
+    padding-right: 100px; 
+}
+}

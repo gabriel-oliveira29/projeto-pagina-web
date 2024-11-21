@@ -1,78 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeinados</title>
-    <link rel="stylesheet" href="css/stylecontatos.css">
-    <link rel="stylesheet" href="css/responsivocontatos.css" media="screen">
-
-    <!-- fonte do site -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-    <!-- icones -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!--javascript-->
-    <script src="javascript/menu.js" defer></script>
-    <script src="javascript/btn-menu-mobile.js" defer></script>
-</head>
-
-<body>
-
-     <header id="header">
-
-        <div class="interface">
-
-            <div class="logo">
-                <img src="img/cafeinados.png" alt="logotipo do site">
-            </div>
-
-            <div class="menu-desktop">
-
-                <nav>
-                    <ul>
-                        <li><a href="index.html#">Home</a></li>
-                        <li><a href="produtos.html#">Produtos</a></li>
-                        <li><a href="acessorios.html#">Acessórios</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-            <div class="btn-menu-mobile" id="btn-menu-mobile">
-                <div class="linha-menumob1"></div>
-                <div class="linha-menumob2"></div>
-                <div class="linha-menumob3"></div>
-            </div>
-
-            <div class="menu-mobile" id="menu-mobile">
-
-                <div class="sair-menumobile" id="sair-menumobile">
-                    <i class="bi bi-x-lg"></i>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li><a href="index.html#">Home</a></li>
-                        <li><a href="produtos.html#">Produtos</a></li>
-                        <li><a href="acessorios.html#">Acessórios</a></li>
-                        <li><a href="contatos.html">Contato</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-        </div>
-        <hr>
-    </header>
+<div class="contatosform">
 
     <div class="formulario">
 
-        <form action="postgresql://postgres:iqrTOPeHEoCNcATUlHWGHoivbxwekalw@junction.proxy.rlwy.net:42339/railway" method="POST">
+        <h1>Entre em Contato</h1>
+        <form method="POST">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
 
@@ -88,34 +19,4 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
-
-    <div class="contato">
-
-        <div class="interface">
-
-            <div class="txt-contato">
-
-                <h2>para mais ajuda </h2><br>
-                <p>Entre em contato com nossa equipe.</p>
-
-            </div>
-
-            <div class="icones-contato">
-
-
-                <i class="bi bi-envelope"> contato@cafeinados.com</i>
-
-                <i class="bi bi-telephone"> (11) 1234-5678</i>
-
-                <i class="bi bi-geo-alt-fill"> Rua dos Cafés, 123, São Paulo, SP</i>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</body>
-
-</html>
+</div>

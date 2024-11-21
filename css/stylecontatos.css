@@ -5,253 +5,36 @@
     font-family: "Quicksand", sans-serif;
 }
 
-/* sessão do menu */
-
-header .btn-menu-mobile {
-    display: none;
-}
-
-header{
-    width: 100%;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: .5s;
-    background-color: #fff;
-}    
-
-header.rolagem{
-    background-color: #fff;
-    padding: 0px ;
-}
-
-.logo img {
-    max-width: 60px;
-}
-
-.interface {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    max-width: 980px;
-    margin: 0 auto;
-}
-
-.menu-desktop nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 0 40px;   
-}
-
-.menu-desktop nav ul li a {
-    text-decoration: none;
-    color: #000;
-    display: inline-block;
-    transition: .2s;
-}
-
-.menu-desktop nav a:hover{
-    transform: scale(1.05);
-}
-
-.btn-contato button {
-    width: 140px;
-    height: 50px;
-    font-size: 20px;
-    background-color: #f9f6f2;  
-    border: 1px solid #000;
-    color: #000;
-    cursor: pointer;
-    transition: .5s;
-    border-radius: 10px;
-}
-
-.btn-contato button:hover{
-    background-color: #fff;
-    color: #000;
-    transform: scale(1.05);
-}
-
-/*menu mobile*/
-
-
-.btn-menu-mobile div{
-    background-color: black;
-    height: 3px;
-    margin: 10px 0;
-}
-
-.linha-menumob1{
-    width: 30px;
-}
-
-.linha-menumob2{
-    width: 30px;
-}
-
-.linha-menumob3{
-    width: 30px;
-}
-
-.menu-mobile {
-    width: 0;
-    height: 0 ;
-    background-color:#000;
-    position: absolute;
-    top: 0;
-    right: 0;
-    
-    display: flex;
-    align-items: center;   
-    justify-content: center;
-
-    overflow: hidden;
-    transition: .5s;
-}
-
-.menu-mobile ul {
-    list-style-type: none;
-}
-
-.menu-mobile nav a {
-    font-size: 30px;
-    text-decoration: none;
-    color:#fff;
-    padding: 20px 0;
-    display: block;
-}
-
-.menu-mobile nav a:hover {
-    transform: scale(1.10);
-    transition: 1s;
-}
-
-.menu-mobile.abrir {
-    width: 100%;
-    height: 120vh;
-}
-
-.sair-menumobile{
-    display: flex;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 30px;
-    font-size: 40px;
-}
-
-.sair-menumobile i:hover {
-    transform: scale(1.05);
-    transition: .5s;
-}
-
-body.no-overflow {
-    overflow: hidden;
-}
-
-/* sessão produtos*/
-
-.mostruario-produtos {
-    height: 120vh;
-    max-width: 920px;
-    margin: 100px auto; 
-}
-
-.titulo1  {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-}
-
-.mostruario{
-    max-width: 920px;
-    margin: 20px auto;
-    box-shadow: 4px 4px 12px ;
-    border: 1px solid;
-    border-radius: 30px;
-
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 40px;
-    justify-content: space-evenly;
-}
-
-.produtos {
-    background-color: #fff;
-    border-radius: 12px;
-    width: 195px;
-    height: 255px;
-    box-shadow: 4px 4px 12px #aaaa;
-    margin: 20px;
-    
-}
-
-.produtos img {
-    width: 100%;
-    height: 130px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.produtos div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    height: 50%;
-}
-
-.produtos h1 {
-    font-size: 1.2rem;
-}
-
-.produtos h2 {
-    font-size: .9rem;
-    color: #aaaa;
-}
-
-.produtos button {
-    background-color: #2192ff;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 80%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.produtos button:hover {
-    transform: scale(1.05);
-}
-
-body.no-overflow {
-    overflow: hidden;
-}
 
 /*formulario*/
 
+.contatosform {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .formulario {
-    margin-top: 100px;
+    margin-top: 50px;
     height: 450px ;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
 }
 
-form {
+.formulario form {
     max-width: 400px;
     margin: auto;
 }
 
-label {
+.formulario label {
     display: block;
     margin: 10px 0 5px;
 }
 
-input, textarea {
+.formulario input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -259,7 +42,7 @@ input, textarea {
     border-radius: 5px;
 }
 
-button {
+.formulario button {
     padding: 10px;
     background-color: #000;
     color: white;
@@ -268,33 +51,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.formulario button:hover {
     transform: scale(1.05);
     transition: .5s;
-}
-
-/*sessão de conatos*/
-
-.contato {
-    background-color: #f9f6f2;  
-}
-
-.contato .interface {
-    max-width: 980px;
-    height: 300px;
-    justify-content: space-evenly;
-}
-
-.txt-contato h2 {
-    font-size: 50px;
-}
-.txt-contato p {
-    font-size: 20px;
-}
-
-.icones-contato {
-    display: flex;
-    font-size: 22px;  
-    flex-direction: column;
-    gap: 30px;
 }

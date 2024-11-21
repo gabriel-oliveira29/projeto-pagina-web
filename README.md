@@ -4,22 +4,32 @@ Bem-vindo ao **Cafeinados**! Nosso site é a porta de entrada para um mundo de s
 **Cafeinados** é um café especializado em oferecer a melhor experiência de café possível. Desde grãos selecionados até métodos de preparo inovadores, nossa missão é proporcionar momentos inesquecíveis para todos os amantes de café.
 
 ## Produtos
-### Grãos de Café
-- **Blend Clássico:** Um mix equilibrado de grãos arábica e robusta, ideal para começar o dia com energia.
-- **Arábica Premium:** Grãos 100% Arábica, conhecidos por seu sabor suave e notas frutadas.
-- **Robusta Forte:** Para quem prefere um café mais encorpado e intenso.
-### Café Moído
-- **Moagem Fina:** Perfeito para espresso e máquinas de café.
-- **Moagem Média:** Ideal para cafeteiras de filtro e prensa francesa.
-- **Moagem Grossa:** Recomendado para cafeteiras de prensa francesa e métodos de preparo por infusão.
+### Café
+- **Clássico:** Um mix equilibrado de grãos arábica e robusta, ideal para começar o dia com energia.
+- **Arábica:** Grãos 100% Arábica, conhecidos por seu sabor suave e notas frutadas.
+- **Forte:** Para quem prefere um café mais encorpado e intenso.
+- **Gourmet:** Feito com grãos de alta qualidade, assim oferecendo um sabor complexo e aroma intenso.
+  
+### Cappuccinos
+- **Clássico:** O tradicinal adoçado com alta cremosidade e aquece o coração.
+- **Avelã:** Com o adoçado sabor do avelã , na medida certa.
+- **Desafeinado:** Uma ótima opção para aqueles que querem uma manhã sem cafeína.
+  
 ### Café em Cápsulas
-- **Cápsulas Espresso:** Versão prática e rápida do nosso blend clássico.
-- **Cápsulas Decaf:** Café descafeinado para aqueles que preferem evitar a cafeína.
-### Acessórios
-- **Moedores de Café:** Moedores manuais e elétricos para ajustar a moagem do seu café.
-- **Canecas Personalizadas:** Canecas elegantes e funcionais para desfrutar seu café com estilo.
-- **Filtros e Cafeteiras:** Variedade de filtros e cafeteiras para todos os métodos de preparo.
+- **Cápsulas Avelã:** Cremosidade com delicioso toque de avelã e cacau.
+- **Cápsulas Napolitano:**  Cremosidade ma combinação perfeita para qualquer hora do dia.
+- **Cápsulas Doce de Leite:** Uma bebida deliciosa e saborosa que une a energia do café e cremosidade.
+  
+### Solúveis
+- **Descafeinado:** Traz a sensação energético, mesmo sem cafeína.
+- **Tradicional:** É a forma mais rápida e prática de saborear um delicioso café.
+- **100% Arábica:** Para os mais refinados dos paladares sendo o mais puro do café.
 
+### Cafeteiras
+- **CitiZ:** Sistema de aquecimento rápido, função de economia de energia e desligamento automático após um período sem uso.
+- **Vertuo Next:** É ideal para preparar uma ampla variedade de cafés, proporcionando uma experiência gourmet em sua casa.
+- **Vertuo Pop:** Extrai um café perfeito, revelando todos os sabores escondidos.
+  
 ## Contato
 Para mais informações, entre em contato conosco através dos seguintes meios:
 - **Email:** contato@cafeinados.com
@@ -29,3 +39,4 @@ Para mais informações, entre em contato conosco através dos seguintes meios:
 Agradecemos por visitar o **Cafeinados**. Esperamos que você desfrute de nossos produtos e serviços!
 
 **Cafeinados** - Transformando cada xícara em um momento especial.
+### Grupo: Gabriel Henrique de Oliveira Alves (202402410652) e Isadora Geremias de Melo (202403503786).

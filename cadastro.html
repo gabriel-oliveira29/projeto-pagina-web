@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<div class="formulario1" id="cadastro">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Produtos</title>
-    <link rel="stylesheet" href="css/stylecadastro.css">
-    <script src="javascript/CadastroProdutos.js" defer></script>
-</head>
-
-<body>
     <div class="container">
         <h1>Cadastro de Produtos</h1>
 
-        <form id="form-cadastro" action="php/cadastro.php" method="POST" enctype="multipart/form-data">
+        <form id="form-cadastro" method="post" action="http://localhost:5000/cadastrar" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="produto">Nome do Produto:</label>
                 <input type="text" id="produto" name="produto" required>
@@ -42,16 +32,21 @@
                 <input type="file" id="imagem" name="imagem" accept="image/*" required>
             </div>
 
-            <button type="submit" id="cadastrar">Cadastrar Produto</button>
+            <button class="botoes" type="submit" id="cadastrar">Cadastrar Produto</button>
         </form>
 
-        <div class="form-group">
-            <label for="produto-excluir">Nome do Produto para Excluir:</label>
-            <input type="text" id="produto-excluir" name="produto-excluir" required>
-        </div>
-        <button type="button" id="excluir">Excluir Produto</button>
+        <form id="form-exclusao">
+            <div class="form-group">
+                <label for="produto-excluir">Nome do Produto para Excluir:</label>
+                <input type="text" id="produto-excluir" name="produto-excluir" required>
+            </div>
+            <button class="botoes" type="button" id="excluir">Excluir Produto</button>
+        </form>
 
     </div>
-</body>
 
-</html>
+</div>
+
+<script>
+    excluirProduto();
+</script>

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target.classList.contains('btn-produto')) {
             event.stopPropagation(); 
 
-            let btn = event.target; // O botão que foi clicado
+            let btn = event.target; 
             let nome = btn.dataset.nome;
             let preco = parseFloat(btn.dataset.preco);
             let imgSrc = btn.dataset.img;
@@ -38,14 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Cria e adiciona a imagem
             let img = document.createElement("img");
-            img.src = imgSrc;
+            img.src = `uploads/${imgSrc}`; 
             img.alt = nome;
             img.style.width = '50px';
             img.style.marginRight = '10px';
 
             // Cria o texto do item
             let textoItem = document.createElement("span");
-            let quantidade = 1; // Inicializa a quantidade
+            let quantidade = 1; 
 
             // Atualiza o texto do item
             function atualizarTexto() {

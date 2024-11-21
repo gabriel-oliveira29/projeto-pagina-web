@@ -1,0 +1,82 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* sessão de apresentação */
+.hero-site {
+  height: 90vh;
+  background-image: url(../img/fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.txt-hero {
+  height: 35vh;
+}
+
+.txt-hero h1 {
+  font-size: 40px;
+  margin: -10px;
+  padding-left: 10px;
+}
+
+.txt-hero p {
+  font-size: 25px;
+}
+
+.btn-produtos a {
+  text-decoration: none;
+  display: flex;
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.btn-produtos a:hover {
+  transform: scale(1.05);
+  transition: 1;
+}
+
+.hero-site .interface {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* sessão de sub-textos */
+.apresent {
+  background-color: #fff;
+  max-width: 920px;
+  padding: 0 70px;
+  margin: 20px auto;
+}
+
+.txt-itens h2 {
+  font-size: 23px;
+}
+
+.txt-itens p {
+  font-size: 17px;
+}
+
+.itens {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-itens img {
+  width: 280px;
+  height: 185px;
+}
+
